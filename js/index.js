@@ -38,3 +38,19 @@ let paragraph = "Quisque ultrices felis libero. Nunc vehicula volutpat leo, sed 
 
 console.log(paragraph.split("").length);
 console.log(paragraph.split("et").length);
+
+
+let phraseToCheck = "amor roma"; 
+let reversePhrasetoCheck = "";
+
+for (let i = phraseToCheck.length -1 ; i >= 0; i--) {
+  reversePhrasetoCheck = reversePhrasetoCheck + phraseToCheck[i];
+}
+
+console.log(reversePhrasetoCheck);
+
+if (phraseToCheck ===  reversePhrasetoCheck){
+  console.log ("The Phrase is a palindrome ");
+} else {
+  console.log("The phrase is not a palindrome try amor roma!");
+}
